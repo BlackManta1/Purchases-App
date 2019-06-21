@@ -12,6 +12,8 @@
 		23EF8A6422B940AB008D4AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EF8A6222B940AB008D4AC0 /* Main.storyboard */; };
 		23EF8A6622B940AD008D4AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EF8A6522B940AD008D4AC0 /* Assets.xcassets */; };
 		23EF8A6922B940AD008D4AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EF8A6722B940AD008D4AC0 /* LaunchScreen.storyboard */; };
+		23EF8A7322B94F6A008D4AC0 /* lollipop.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EF8A7222B94F6A008D4AC0 /* lollipop.png */; };
+		23EF8A7622B95D41008D4AC0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EF8A7522B95D41008D4AC0 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		23EF8A6522B940AD008D4AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23EF8A6822B940AD008D4AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23EF8A6A22B940AD008D4AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EF8A7222B94F6A008D4AC0 /* lollipop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lollipop.png; sourceTree = "<group>"; };
+		23EF8A7522B95D41008D4AC0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EF8A7622B95D41008D4AC0 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				23EF8A5D22B940AB008D4AC0 /* Purchases App */,
 				23EF8A5C22B940AB008D4AC0 /* Products */,
+				23EF8A7422B95D41008D4AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +63,20 @@
 				23EF8A5E22B940AB008D4AC0 /* AppDelegate.swift */,
 				23EF8A6022B940AB008D4AC0 /* ViewController.swift */,
 				23EF8A6222B940AB008D4AC0 /* Main.storyboard */,
+				23EF8A7222B94F6A008D4AC0 /* lollipop.png */,
 				23EF8A6522B940AD008D4AC0 /* Assets.xcassets */,
 				23EF8A6722B940AD008D4AC0 /* LaunchScreen.storyboard */,
 				23EF8A6A22B940AD008D4AC0 /* Info.plist */,
 			);
 			path = "Purchases App";
+			sourceTree = "<group>";
+		};
+		23EF8A7422B95D41008D4AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23EF8A7522B95D41008D4AC0 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,11 @@
 				TargetAttributes = {
 					23EF8A5A22B940AB008D4AC0 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +144,7 @@
 			files = (
 				23EF8A6922B940AD008D4AC0 /* LaunchScreen.storyboard in Resources */,
 				23EF8A6622B940AD008D4AC0 /* Assets.xcassets in Resources */,
+				23EF8A7322B94F6A008D4AC0 /* lollipop.png in Resources */,
 				23EF8A6422B940AB008D4AC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

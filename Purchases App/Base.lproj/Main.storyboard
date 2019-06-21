@@ -1,24 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3nj-iO-hnM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="EPd-64-3Gf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="3nj-iO-hnM" customClass="ViewController" customModule="Purchases_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IJK-c6-a07">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lollipop.png" translatesAutoresizingMaskIntoConstraints="NO" id="5UL-6Y-y6f">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="rqA-o5-CBq"/>
+                                    <constraint firstAttribute="width" secondItem="5UL-6Y-y6f" secondAttribute="height" multiplier="1:1" id="zHD-db-RkK"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAh-vQ-pXx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Purchases App" id="EZQ-Z1-xeH"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEt-h4-DW2">
+                                <rect key="frame" x="20" y="586" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AZd-Rd-4M5"/>
+                                </constraints>
+                                <string key="text">Taste of this lollipop is absolutely amazing. Made with zest of lemon and strawberries, try this candy will give you many happiness. Click on the candy for buy it.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Wy-Of-5nM">
+                                <rect key="frame" x="16" y="197.5" width="382" height="76.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best lollipop in the world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmQ-eH-sFv">
+                                        <rect key="frame" x="39.5" y="0.0" width="303" height="48"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="699,99 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0B-32-ohI">
+                                        <rect key="frame" x="155.5" y="56" width="71" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NEt-h4-DW2" firstAttribute="top" secondItem="5UL-6Y-y6f" secondAttribute="bottom" constant="78" id="8a9-qy-7e0"/>
+                            <constraint firstItem="5UL-6Y-y6f" firstAttribute="centerX" secondItem="IJK-c6-a07" secondAttribute="centerX" id="JMv-LI-ASr"/>
+                            <constraint firstItem="5UL-6Y-y6f" firstAttribute="top" secondItem="4Wy-Of-5nM" secondAttribute="bottom" constant="114" id="RBq-NR-ghU"/>
+                            <constraint firstItem="NEt-h4-DW2" firstAttribute="leading" secondItem="2T3-g5-Q7w" secondAttribute="leading" constant="20" id="TEj-LE-X7P"/>
+                            <constraint firstItem="2T3-g5-Q7w" firstAttribute="trailing" secondItem="4Wy-Of-5nM" secondAttribute="trailing" constant="16" id="YvT-fi-H1m"/>
+                            <constraint firstItem="5UL-6Y-y6f" firstAttribute="centerY" secondItem="IJK-c6-a07" secondAttribute="centerY" id="nJU-5Z-xMM"/>
+                            <constraint firstItem="4Wy-Of-5nM" firstAttribute="leading" secondItem="2T3-g5-Q7w" secondAttribute="leading" constant="16" id="nyx-PP-bhh"/>
+                            <constraint firstItem="4Wy-Of-5nM" firstAttribute="centerX" secondItem="IJK-c6-a07" secondAttribute="centerX" id="p2L-wo-NOV"/>
+                            <constraint firstItem="2T3-g5-Q7w" firstAttribute="trailing" secondItem="NEt-h4-DW2" secondAttribute="trailing" constant="20" id="s0b-Nd-ciD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2T3-g5-Q7w"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lollipopImageView" destination="5UL-6Y-y6f" id="E2C-GE-bLO"/>
+                        <outlet property="priceResultLabel" destination="g0B-32-ohI" id="NwJ-Eu-rxm"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxG-EN-NU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="592.75362318840587" y="-272.54464285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lollipop.png" width="512" height="512"/>
+    </resources>
 </document>
